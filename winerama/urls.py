@@ -20,5 +20,6 @@ urlpatterns = [
     url(r'^', include('reviews.urls')),
     url(r'^reviews/', include('reviews.urls', namespace="reviews")),
     url(r'^admin/', include(admin.site.urls)),
+    url('^accounts/', include('django.contrib.auth.urls', namespace="auth"))
 
 ]
